@@ -14,8 +14,8 @@ const Banner = () => {
         <h1 className='md:text-[70px] text-[32px] font-bold'>Caring for Curls <br/> Coils & Culture</h1>
         <p className='md:text-[20px] text-[16px] font-medium text-black/60 w-70/100'>Unlock the secret to healthy, vibrant hair with products designed for Nigerian People — infused with nature, backed by science, and made with love.</p>
         <div className='flex gap-4 items-center pt-6'>
-            <img src={Storebutton} alt="Storebutton" className='w-[187px] h-[56px]'/>
-            <img src={Applebutton} alt="Applebutton" className='w-[187px] h-[56px]'/>
+            <img src={Storebutton} alt="Storebutton" className='md:w-[187px] w-[127px] h-[56px]'/>
+            <img src={Applebutton} alt="Applebutton" className='md:w-[187px] w-[127px] h-[56px]'/>
         </div>
         <div className='flex gap-4 items-center pt-4 pb-12 '>
             <img src={fbIcon} alt="fbIcon" className=''/>
