@@ -75,12 +75,12 @@ const Navbar = () => {
         <div className="py-8 px-4">
           <nav className=" md:col-span-6 col-span-1 ">
             <ul className="flex flex-col justify-start  space-y-4 text-[12px] font-normal ">
-              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#">Home</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#HowItWorks">Process</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Quiz">Quiz</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#products">Recommendation</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#FAQ">FAQ</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#">Blog</a></li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#" onClick={()=>setShowMenu(false)}>Home</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#HowItWorks" onClick={()=>setShowMenu(false)}>Process</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Quiz" onClick={()=>setShowMenu(false)}>Quiz</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Recommendation" onClick={()=>setShowMenu(false)}>Recommendation</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#FAQ" onClick={()=>setShowMenu(false)}>FAQ</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#" onClick={()=>setShowMenu(false)}>Blog</a></li>
             </ul>
           </nav>
         </div>
