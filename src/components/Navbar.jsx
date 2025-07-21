@@ -1,0 +1,92 @@
+import React, { useEffect, useState } from "react";
+import logo from "../assets/img/type4pallogo.png";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { RxCross1 } from "react-icons/rx";
+import { Link } from "react-router";
+const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const [active, setActive] = useState('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('#header');
+      if (window.scrollY > 0) {
+        header.classList.add('sticky', 'top-0', 'z-10');
+      } else {
+        header.classList.remove('sticky', 'top-0', 'z-10');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header id="header" className="bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] relative">
+      <div className="max-w-7xl md:mx-auto mx-4">
+        <div className="flex justify-between items-center">
+          <div>
+            <img
+              src={logo}
+              alt="type4 pal logo"
+              className="md:w-[139px] w-[100px] md:h-[96px] h-[76px]"
+            />
+          </div>
+          <span
+            className="md:hidden block text-2xl"
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            <FaBarsStaggered />
+          </span>
+          <ul className="md:flex hidden gap-6 text-[18px] font-[600] ">
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='home'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#"onClick={()=>setActive('home')}>Home</a></li>
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Process'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#HowItWorks"onClick={()=>setActive('Process')}>Process</a></li>
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Quiz'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#Quiz"onClick={()=>setActive('Quiz')}>Quiz</a></li>
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Recommendation'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#Recommendation" onClick={()=>setActive('Recommendation')}>Recommendation</a></li>
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='FAQ'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#FAQ" onClick={()=>setActive('FAQ')}>FAQ</a></li>
+            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Blog'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#" onClick={()=>setActive('Blog')}>Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      {/* mobile nav */}
+      <div
+        className={`absolute bg-white text-black z-10 min-h-screen w-full top-0  md:hidden  flex flex-col  transition-transform duration-300 ${
+          showMenu ? " translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between p-4">
+          <div className="">
+            <img
+              src={logo}
+              alt="type4 pal logo"
+              className="md:w-[139px] w-[100px] md:h-[96px] h-[76px]"
+            />
+          </div>
+          <span
+            className="text-2xl p-1 border-1 border-red-600 bg-accent-content"
+            onClick={() => setShowMenu(false)}
+          >
+            <RxCross1 className="text-red-600 "/>
+          </span>
+        </div>
+        
+        <div className="py-8 px-4">
+          <nav className=" md:col-span-6 col-span-1 ">
+            <ul className="flex flex-col justify-start  space-y-4 text-[12px] font-normal ">
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#">Home</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#HowItWorks">Process</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Quiz">Quiz</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#products">Recommendation</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#FAQ">FAQ</a></li>
+            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
