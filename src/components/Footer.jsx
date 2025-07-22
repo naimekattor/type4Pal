@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from '../assets/img/type4pallogo.png'
 import { FaFacebook, FaFacebookF, FaTwitter } from 'react-icons/fa6'
+import { Link } from 'react-router'
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#FAF8F5] to-[#FBF8F5] py-8 px-4 sm:px-6 lg:px-8 font-sans">
+    <footer className="bg-gradient-to-r from-[#FAF8F5] to-[#FBF8F5] py-8 px-4  font-sans">
       <div className="max-w-7xl mx-auto">
         {/* Top section: Logo, Privacy/Terms, Social Icons */}
         <div className="flex  justify-between items-center pb-6 border-b border-gray-200">
@@ -14,12 +15,12 @@ const Footer = () => {
 
           {/* Privacy Policy, Terms, and Social Icons */}
           <div className="flex items-center  gap-2">
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">
+            <Link to="/privacy-policy" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">
               Privacy Policy
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">
+            </Link>
+            <Link to="/terms-condiditions" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">
               Terms
-            </a>
+            </Link>
             <div className="flex space-x-4">
               {/* Twitter Icon */}
               <a href="#" aria-label="Twitter" className="text-gray-600 hover:text-gray-900">

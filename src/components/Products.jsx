@@ -88,7 +88,7 @@ const ProductSuggestions = () => {
 
   return (
     <section id='Recommendation' className=' bg-[#fffaf6]'>
-        <div className="py-20 px-4 max-w-6xl mx-auto  relative">
+        <div className="py-20 px-4 max-w-7xl mx-auto  relative">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-green-900">Product Suggestions</h2>
         <p className="mt-2 text-gray-600">

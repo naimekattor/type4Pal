@@ -32,7 +32,7 @@ const HowItWorks = () => {
   return (
     <section  id='HowItWorks' className='relative'>
       <img src={flower} alt="flower" className=' absolute left-0 top-0' />
-      <div className="py-20 px-4 max-w-6xl mx-auto bg-white ">
+      <div className="py-20 px-4 max-w-7xl mx-auto bg-white ">
       
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-[#004D40]">How It Works</h2>

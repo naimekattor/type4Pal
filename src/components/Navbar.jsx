@@ -24,14 +24,17 @@ const Navbar = () => {
 
   return (
     <header id="header" className="bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] relative">
-      <div className="max-w-7xl md:mx-auto mx-4">
+      <div className=" 2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto mx-4">
         <div className="flex justify-between items-center">
           <div>
+            <Link to={'/'}>
             <img
               src={logo}
               alt="type4 pal logo"
               className="md:w-[139px] w-[100px] md:h-[78px] h-[76px]"
             />
+            </Link>
+            
           </div>
           <span
             className="md:hidden block text-2xl"

@@ -3,16 +3,16 @@ import flower from '../assets/img/flower.png'
 
 const QuizAnalysis = () => {
   return (
-    <section id='Quiz' className="py-20 px-4 xl:px-20 bg-gradient-to-r from-[#FAF8F5] to-[#FFFAF5] relative">
+    <section id='Quiz' className="py-20 px-4  bg-gradient-to-r from-[#FAF8F5] to-[#FFFAF5] relative">
       <img src={flower} alt="flower" className=' absolute right-0 top-0 rotate-180' />
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-green-900">Quiz Analysis</h2>
         <p className="mt-2 text-gray-600">
           Lorem Ipsum is simply dummy text of the
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Video player placeholder */}
         <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
           <video

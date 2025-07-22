@@ -48,7 +48,7 @@ const FreequentlyAsked = () => {
           <p className="text-base sm:text-lg text-[#6B6868] mb-8 mt-2 text-center">
             We recommend the perfect natural products for your hair
           </p>
-      <div className="max-w-6xl w-full   overflow-hidden md:flex mx-auto">
+      <div className="max-w-7xl w-full   overflow-hidden md:flex mx-auto">
         {/* Left Section: Frequently Asked Questions and Accordion */}
         <div className="md:w-2/3 p-6 sm:p-8 lg:p-10">
           
