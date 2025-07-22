@@ -11,9 +11,9 @@ const Navbar = () => {
     const handleScroll = () => {
       const header = document.querySelector('#header');
       if (window.scrollY > 0) {
-        header.classList.add('sticky', 'top-0', 'z-10');
+        header.classList.add('sticky', 'top-0', 'z-50');
       } else {
-        header.classList.remove('sticky', 'top-0', 'z-10');
+        header.classList.remove('sticky', 'top-0', 'z-50');
       }
     };
 
@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header id="header" className="bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] relative">
+    <header id="header" className=" bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] ">
       <div className=" 2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto mx-4">
         <div className="flex justify-between items-center">
           <div>
@@ -43,12 +43,12 @@ const Navbar = () => {
             <FaBarsStaggered />
           </span>
           <ul className="md:flex hidden gap-6 text-[18px] font-[600] ">
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='home'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#"onClick={()=>setActive('home')}>Home</a></li>
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Process'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#HowItWorks"onClick={()=>setActive('Process')}>Process</a></li>
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Quiz'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#Quiz"onClick={()=>setActive('Quiz')}>Quiz</a></li>
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Recommendation'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#Recommendation" onClick={()=>setActive('Recommendation')}>Recommendation</a></li>
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='FAQ'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#FAQ" onClick={()=>setActive('FAQ')}>FAQ</a></li>
-            <li className={`cursor-pointer hover:border-b-red-500 hover:text-red-500 hover:border-b-2 ${active==='Blog'?'text-red-500 border-b-red-500 border-b-2':''}`}><a href="#" onClick={()=>setActive('Blog')}>Blog</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='home'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#"onClick={()=>setActive('home')}>Home</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Process'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#HowItWorks"onClick={()=>setActive('Process')}>Process</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Quiz'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#Quiz"onClick={()=>setActive('Quiz')}>Quiz</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Recommendation'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#Recommendation" onClick={()=>setActive('Recommendation')}>Recommendation</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='FAQ'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#FAQ" onClick={()=>setActive('FAQ')}>FAQ</a></li>
+            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Blog'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#" onClick={()=>setActive('Blog')}>Blog</a></li>
           </ul>
         </div>
       </div>
