@@ -6,9 +6,9 @@ import { Link } from "react-router";
 const PrivacyPage = () => {
   return (
     <div className="2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto mx-4 space-y-4 py-8 ">
-      <div className="bg-white shadow-2xl py-2 px-4  flex items-center gap-4">
+      {/* <div className="bg-white shadow-2xl py-2 px-4  flex items-center gap-4">
         <span className="flex items-center gap-4 text-[30px]"><Link to={'/'}><FaHome/></Link> <FaLongArrowAltRight/></span><span>Privacy plicy</span>
-      </div>
+      </div> */}
       <h3 className="text-[20px] font-bold text-center">Privacy Policy</h3>
       <p>
         DSGNX INC., an Alberta corporation, produces and maintains the Type4Pal
@@ -47,7 +47,9 @@ const PrivacyPage = () => {
         concerns regarding your privacy or this policy, please contact us at
         hello@type4pal.com.
       </p>
-      <h3 className="text-[20px] font-medium ">Information Collection and Use</h3>
+      <h3 className="text-[20px] font-medium ">
+        Information Collection and Use
+      </h3>
       <p>
         When you use Type4Pal, we collect various types of personal data that
         allow us to deliver personalized hair care insights and recommendations
@@ -61,7 +63,9 @@ const PrivacyPage = () => {
         types, operating systems, and usage data, which help us improve our
         services and ensure optimal performance
       </p>
-      <h3 className="text-[20px] font-medium ">Cookies and Similar Technologies</h3>
+      <h3 className="text-[20px] font-medium ">
+        Cookies and Similar Technologies
+      </h3>
       <p>
         Our website and app utilize cookies, web beacons, and other similar
         technologies to enhance user experience, analyze site traffic, and track
@@ -90,7 +94,9 @@ const PrivacyPage = () => {
         legally recognized transfer mechanisms to ensure the lawful transfer of
         data.
       </p>
-      <h3 className="text-[20px] font-medium ">Jurisdiction‑Specific Disclosures</h3>
+      <h3 className="text-[20px] font-medium ">
+        Jurisdiction‑Specific Disclosures
+      </h3>
       <p>
         Because the Type4Pal community spans the globe, we supplement this
         Policy with jurisdiction‑specific disclosures that clarify local privacy
@@ -98,78 +104,77 @@ const PrivacyPage = () => {
         the majority of our users with Type 4 hair reside or where privacy law
         imposes distinct obligations.
         <ul className="space-y-4 py-4">
-            <li>● Canada (Alberta and Federal). This
-        Policy is intended to satisfy the notice requirements of Alberta’s PIPA
-        and Canada’s PIPEDA. Alberta users who believe their personal
-        information has been mishandled may file a complaint with the Office of
-        the Information and Privacy Commissioner of Alberta (www.oipc.ab.ca).</li>
-        <li>
-            ●
-        United States. While federal comprehensive privacy legislation has not
-        yet been enacted, several state laws apply. If you reside in California,
-        Colorado, Connecticut, Utah, or Virginia you are entitled to the
-        disclosures, opt‑out mechanisms, and non‑discrimination protections
-        provided by the CCPA/CPRA, CPA, CTDPA, UCPA, and VCDPA respectively. We
-        honour Global Privacy Control (GPC) signals to facilitate state‑law
-        opt‑outs of "sale" or "sharing". 
-        </li>
-        <li>
-             ● European Economic Area. We act as a
-        "controller" of your personal data under the General Data Protection
-        Regulation. Our EU representative under Article 27 GDPR is DataRep,
-        107‑111 Fleet Street, London, EC4A 2AB, United Kingdom. EEA users may
-        lodge complaints with their local data‑protection authority.
-        </li>
-        <li>
-            ● United
-        Kingdom. For UK users, we comply with the UK GDPR and the Data
-        Protection Act 2018. Our UK representative is also DataRep, contactable
-        at the address above.
-        </li>
-        <li>
-            ● Brazil. As required by the Lei Geral de Proteção
-        de Dados (LGPD), we rely on consent (Art. 7.I) and legitimate interest
-        (Art. 7.IX) as legal bases for processing. Brazilian residents may
-        contact the Autoridade Nacional de Proteção de Dados (ANPD) to escalate
-        privacy concerns. 
-        </li>
-        <li>
-            ● Nigeria. In line with the Nigeria Data Protection
-        Act 2023 (NDPA) and the Nigeria Data Protection Regulation 2019, we
-        implement organisational and technical security measures appropriate to
-        the risk and honour data‑subject rights of access, rectification, and
-        erasure. Our data‑protection contact remains hello@type4pal.com.
-        </li>
-        <li>
-             ● South
-        Africa. We comply with the Protection of Personal Information Act
-        (POPIA). The Information Regulator (www.inforegulator.org.za) oversees
-        POPIA enforcement. You may object to processing under Section 11(3) of
-        POPIA.
-        </li>
-        <li>
-             ● Kenya. Kenyan residents are protected by the Data Protection
-        Act 2019. We have appointed a Data Protection Officer (DPO) reachable at
-        hello@type4pal.com.
-        </li>
-        <li>
-             ● Ghana. We abide by applicable provisions of the
-        Data Protection Act, 2012 (Act 843) and recognise the Data Protection
-        Commission of Ghana as the competent authority. 
-        </li>
-        <li>
-             ● Caribbean (Jamaica,
-        Trinidad & Tobago, Barbados). Where national data‑protection statutes
-        such as Jamaica’s Data Protection Act 2020 or Trinidad & Tobago’s Data
-        Protection Act 2022 apply, we process personal information in accordance
-        with the eight fundamental privacy principles and users may exercise
-        equivalent rights of access, correction, and deletion. This list is not
-        exhaustive. If your jurisdiction provides stronger privacy rights than
-        those described in this Policy, we will extend those stronger rights to
-        you whenever legally required.
-        </li>
+          <li>
+            ● Canada (Alberta and Federal). This Policy is intended to satisfy
+            the notice requirements of Alberta’s PIPA and Canada’s PIPEDA.
+            Alberta users who believe their personal information has been
+            mishandled may file a complaint with the Office of the Information
+            and Privacy Commissioner of Alberta (www.oipc.ab.ca).
+          </li>
+          <li>
+            ● United States. While federal comprehensive privacy legislation has
+            not yet been enacted, several state laws apply. If you reside in
+            California, Colorado, Connecticut, Utah, or Virginia you are
+            entitled to the disclosures, opt‑out mechanisms, and
+            non‑discrimination protections provided by the CCPA/CPRA, CPA,
+            CTDPA, UCPA, and VCDPA respectively. We honour Global Privacy
+            Control (GPC) signals to facilitate state‑law opt‑outs of "sale" or
+            "sharing".
+          </li>
+          <li>
+            ● European Economic Area. We act as a "controller" of your personal
+            data under the General Data Protection Regulation. Our EU
+            representative under Article 27 GDPR is DataRep, 107‑111 Fleet
+            Street, London, EC4A 2AB, United Kingdom. EEA users may lodge
+            complaints with their local data‑protection authority.
+          </li>
+          <li>
+            ● United Kingdom. For UK users, we comply with the UK GDPR and the
+            Data Protection Act 2018. Our UK representative is also DataRep,
+            contactable at the address above.
+          </li>
+          <li>
+            ● Brazil. As required by the Lei Geral de Proteção de Dados (LGPD),
+            we rely on consent (Art. 7.I) and legitimate interest (Art. 7.IX) as
+            legal bases for processing. Brazilian residents may contact the
+            Autoridade Nacional de Proteção de Dados (ANPD) to escalate privacy
+            concerns.
+          </li>
+          <li>
+            ● Nigeria. In line with the Nigeria Data Protection Act 2023 (NDPA)
+            and the Nigeria Data Protection Regulation 2019, we implement
+            organisational and technical security measures appropriate to the
+            risk and honour data‑subject rights of access, rectification, and
+            erasure. Our data‑protection contact remains hello@type4pal.com.
+          </li>
+          <li>
+            ● South Africa. We comply with the Protection of Personal
+            Information Act (POPIA). The Information Regulator
+            (www.inforegulator.org.za) oversees POPIA enforcement. You may
+            object to processing under Section 11(3) of POPIA.
+          </li>
+          <li>
+            ● Kenya. Kenyan residents are protected by the Data Protection Act
+            2019. We have appointed a Data Protection Officer (DPO) reachable at
+            hello@type4pal.com.
+          </li>
+          <li>
+            ● Ghana. We abide by applicable provisions of the Data Protection
+            Act, 2012 (Act 843) and recognise the Data Protection Commission of
+            Ghana as the competent authority.
+          </li>
+          <li>
+            ● Caribbean (Jamaica, Trinidad & Tobago, Barbados). Where national
+            data‑protection statutes such as Jamaica’s Data Protection Act 2020
+            or Trinidad & Tobago’s Data Protection Act 2022 apply, we process
+            personal information in accordance with the eight fundamental
+            privacy principles and users may exercise equivalent rights of
+            access, correction, and deletion. This list is not exhaustive. If
+            your jurisdiction provides stronger privacy rights than those
+            described in this Policy, we will extend those stronger rights to
+            you whenever legally required.
+          </li>
         </ul>
-          
       </p>
       <h3 className="text-[20px] font-medium ">Your Rights and Choices</h3>
       <p>

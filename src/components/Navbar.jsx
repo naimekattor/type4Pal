@@ -5,36 +5,38 @@ import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-router";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [active, setActive] = useState('home');
+  const [active, setActive] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector('#header');
+      const header = document.querySelector("#header");
       if (window.scrollY > 0) {
-        header.classList.add('sticky', 'top-0', 'z-50');
+        header.classList.add("sticky", "top-0", "z-50");
       } else {
-        header.classList.remove('sticky', 'top-0', 'z-50');
+        header.classList.remove("sticky", "top-0", "z-50");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header id="header" className=" bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] ">
+    <header
+      id="header"
+      className=" bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] "
+    >
       <div className=" 2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto mx-4">
         <div className="flex justify-between items-center">
           <div>
-            <Link to={'/'}>
-            <img
-              src={logo}
-              alt="type4 pal logo"
-              className="md:w-[139px] w-[100px] md:h-[78px] h-[76px]"
-            />
+            <Link to={"/"}>
+              <img
+                src={logo}
+                alt="type4 pal logo"
+                className="md:w-[139px] w-[100px] md:h-[78px] h-[76px]"
+              />
             </Link>
-            
           </div>
           <span
             className="md:hidden block text-2xl"
@@ -43,12 +45,65 @@ const Navbar = () => {
             <FaBarsStaggered />
           </span>
           <ul className="md:flex hidden gap-6 text-[18px] font-[600] ">
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='home'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#"onClick={()=>setActive('home')}>Home</a></li>
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Process'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#HowItWorks"onClick={()=>setActive('Process')}>Process</a></li>
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Quiz'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#Quiz"onClick={()=>setActive('Quiz')}>Quiz</a></li>
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Recommendation'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#Recommendation" onClick={()=>setActive('Recommendation')}>Recommendation</a></li>
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='FAQ'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#FAQ" onClick={()=>setActive('FAQ')}>FAQ</a></li>
-            <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Blog'?'text-[#FF6F61] border-b-[#FF6F61] border-b-2':''}`}><a href="#" onClick={()=>setActive('Blog')}>Blog</a></li>
+            <li
+              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
+                active === "home"
+                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
+                  : ""
+              }`}
+            >
+              <a href="#" onClick={() => setActive("home")}>
+                Home
+              </a>
+            </li>
+            <li
+              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
+                active === "Process"
+                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
+                  : ""
+              }`}
+            >
+              <a href="#HowItWorks" onClick={() => setActive("Process")}>
+                Process
+              </a>
+            </li>
+            <li
+              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
+                active === "Quiz"
+                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
+                  : ""
+              }`}
+            >
+              <a href="#Quiz" onClick={() => setActive("Quiz")}>
+                Quiz
+              </a>
+            </li>
+            <li
+              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
+                active === "Recommendation"
+                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
+                  : ""
+              }`}
+            >
+              <a
+                href="#Recommendation"
+                onClick={() => setActive("Recommendation")}
+              >
+                Recommendation
+              </a>
+            </li>
+            <li
+              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
+                active === "FAQ"
+                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
+                  : ""
+              }`}
+            >
+              <a href="#FAQ" onClick={() => setActive("FAQ")}>
+                FAQ
+              </a>
+            </li>
+            {/* <li className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${active==='Blog'?'text-[#FF6F61] border-b-[#FF6F61t] border-b-2':''}`}><a href="#" onClick={()=>setActive('Blog')}>Blog</a></li> */}
           </ul>
         </div>
       </div>
@@ -71,19 +126,43 @@ const Navbar = () => {
             className="text-2xl p-1 border-1 border-red-600 bg-accent-content"
             onClick={() => setShowMenu(false)}
           >
-            <RxCross1 className="text-red-600 "/>
+            <RxCross1 className="text-red-600 " />
           </span>
         </div>
-        
+
         <div className="py-8 px-4">
           <nav className=" md:col-span-6 col-span-1 ">
             <ul className="flex flex-col justify-start  space-y-4 text-[12px] font-normal ">
-              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#" onClick={()=>setShowMenu(false)}>Home</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#HowItWorks" onClick={()=>setShowMenu(false)}>Process</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Quiz" onClick={()=>setShowMenu(false)}>Quiz</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#Recommendation" onClick={()=>setShowMenu(false)}>Recommendation</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#FAQ" onClick={()=>setShowMenu(false)}>FAQ</a></li>
-            <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]"><a href="#" onClick={()=>setShowMenu(false)}>Blog</a></li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#" onClick={() => setShowMenu(false)}>
+                  Home
+                </a>
+              </li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#HowItWorks" onClick={() => setShowMenu(false)}>
+                  Process
+                </a>
+              </li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#Quiz" onClick={() => setShowMenu(false)}>
+                  Quiz
+                </a>
+              </li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#Recommendation" onClick={() => setShowMenu(false)}>
+                  Recommendation
+                </a>
+              </li>
+              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#FAQ" onClick={() => setShowMenu(false)}>
+                  FAQ
+                </a>
+              </li>
+              {/* <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
+                <a href="#" onClick={() => setShowMenu(false)}>
+                  Blog
+                </a>
+              </li> */}
             </ul>
           </nav>
         </div>

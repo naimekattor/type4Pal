@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// ArrowRight icon from Lucide React for the accordion
+// ArrowRight icon 
 const ArrowRight = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -19,9 +19,8 @@ const ArrowRight = ({ className }) => (
   </svg>
 );
 
-// AccordionItem component handles the state and rendering for each FAQ item
 const AccordionItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage if the accordion item is open or closed
+  const [isOpen, setIsOpen] = useState(false); 
 
   // Function to toggle the open/closed state
   const toggleAccordion = () => {
@@ -33,7 +32,7 @@ const AccordionItem = ({ question, answer }) => {
       <button
         className="flex justify-between items-center w-full text-left focus:outline-none"
         onClick={toggleAccordion}
-        aria-expanded={isOpen} // ARIA attribute for accessibility
+        aria-expanded={isOpen} 
       >
         {/* Question text */}
         <span className="text-lg font-medium text-gray-800">{question}</span>
