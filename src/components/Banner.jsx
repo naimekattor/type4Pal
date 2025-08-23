@@ -28,7 +28,7 @@ const Banner = () => {
               <Link
                 target="_blank"
                 to={"https://play.google.com/"}
-                className="relative w-full bg-[#32302E] cursor-pointer hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-22 h-16 "
+                className="relative w-full bg-[#32302E] cursor-pointer hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-20 h-16 "
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -79,7 +79,7 @@ const Banner = () => {
               <Link
                 target="_blank"
                 to={"https://play.google.com/"}
-                className="relative w-full bg-[#32302E] hover:bg-[#004f42] cursor-pointer transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-22 h-16  "
+                className="relative w-full bg-[#32302E] hover:bg-[#004f42] cursor-pointer transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-20 h-16  "
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">

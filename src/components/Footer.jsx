@@ -22,7 +22,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="type4 pal logo"
-              srcset=""
+              loading="lazy"
               className="md:w-[139px] w-[100px] md:h-[96px] h-[76px]"
             />
           </div>
