@@ -38,14 +38,14 @@ const FreequentlyAsked = () => {
   return (
     <div
       id="FAQ"
-      className="p-4 bg-gradient-to-b from-[#fffaf6] to-[#ffffff] sm:p-6 lg:p-8 font-sans relative "
+      className="p-4 bg-gradient-to-b from-[#fffaf6] to-[#ffffff] sm:p-6 lg:p-8 pt-30 font-sans relative "
     >
       <img
         src={ellipse}
         className="absolute -top-[200px] -left-[800px] z-50 w-full h-[600px]"
       />
       {/* Main Heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#004D40] mb-2 text-center">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#004D40] mb-2 text-center py-10">
         Frequently Asked Questions
       </h1>
       {/* Subtitle */}

@@ -78,20 +78,7 @@ const Navbar = () => {
                 Quiz
               </a>
             </li>
-            <li
-              className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
-                active === "Recommendation"
-                  ? "text-[#FF6F61] border-b-[#FF6F61t] border-b-2"
-                  : ""
-              }`}
-            >
-              <a
-                href="#Recommendation"
-                onClick={() => setActive("Recommendation")}
-              >
-                Recommendation
-              </a>
-            </li>
+
             <li
               className={`cursor-pointer hover:border-b-[#FF6F61] hover:text-[#FF6F61] hover:border-b-2 ${
                 active === "FAQ"
@@ -148,11 +135,7 @@ const Navbar = () => {
                   Quiz
                 </a>
               </li>
-              <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
-                <a href="#Recommendation" onClick={() => setShowMenu(false)}>
-                  Recommendation
-                </a>
-              </li>
+
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
                 <a href="#FAQ" onClick={() => setShowMenu(false)}>
                   FAQ
