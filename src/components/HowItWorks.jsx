@@ -32,15 +32,12 @@ const HowItWorks = () => {
 
   return (
     <section id="HowItWorks" className="relative ">
-      {/* Background Image: Positioned absolutely to the parent section */}
       <img
         src={flower}
         alt="flower"
         className="absolute left-0 top-0 shrink-0"
       />
 
-      {/* Foreground Content: Positioned relatively with a higher z-index to appear on top */}
-      {/* We remove 'bg-white' to let the background image show through */}
       <div className="relative z-10 py-20 px-4 max-w-7xl mx-auto">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#004D40]">
