@@ -17,12 +17,12 @@ const QuizAnalysis = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-green-900">
           Quiz Analysis
         </h2>
-        <p className="mt-2 text-gray-600">
+        {/* <p className="mt-2 text-gray-600">
           Lorem Ipsum is simply dummy text of the
-        </p>
+        </p> */}
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="max-w-3xl mx-auto ">
         {/* Video player placeholder */}
 
         {/* <video
@@ -36,13 +36,11 @@ const QuizAnalysis = () => {
         <InfoCard />
 
         {/* Right text block */}
-        <div className="text-left">
+        {/* <div className="text-left">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
             Process Flow Of Quiz
           </h3>
-          <p className="text-gray-600 mb-4">
-            Lorem Ipsum is simply dummy text of the
-          </p>
+          
           <p className="text-sm md:text-base text-gray-500 mb-6">
             Particularly impressed by your recent project launch. Given your
             role as Chief Technology Officer, I believe you I recently came
@@ -56,7 +54,7 @@ const QuizAnalysis = () => {
           <button className="bg-[#FF6F61] text-[13px] text-white font-semibold py-2 px-6 rounded shadow hover:shadow-md transition">
             Download for Free trail
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

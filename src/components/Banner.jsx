@@ -20,7 +20,7 @@ const Banner = () => {
               Stop Guessing. Start Loving Your Hair
             </h1>
             <p className="md:text-[20px] text-[16px] font-medium text-black/60 w-70/100">
-              Type4 Pal helps you finally understand your hair and gives you the
+              Type4Pal helps you finally understand your hair and gives you the
               exact products and routines it needs, so every day is a good hair
               day.
             </p>
@@ -28,7 +28,7 @@ const Banner = () => {
               <Link
                 target="_blank"
                 to={"https://play.google.com/"}
-                className="relative w-full bg-[#32302E] cursor-pointer hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-20 h-16 "
+                className="relative w-full bg-[#32302E] cursor-pointer hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105  md:h-20 h-16 "
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -71,15 +71,15 @@ const Banner = () => {
                 </div>
 
                 {/* Right section with download icon */}
-                <div className="flex-shrink-0 text-white group-hover:animate-bounce">
+                {/* <div className="flex-shrink-0 text-white group-hover:animate-bounce">
                   <AiOutlineDownload className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-                </div>
+                </div> */}
               </Link>
               {/* Apple App Store Button */}
               <Link
                 target="_blank"
                 to={"https://play.google.com/"}
-                className="relative w-full bg-[#32302E] hover:bg-[#004f42] cursor-pointer transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 md:h-20 h-16  "
+                className="relative w-full bg-[#32302E] hover:bg-[#004f42] cursor-pointer transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105  md:h-20 h-16  "
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -114,9 +114,9 @@ const Banner = () => {
                 </div>
 
                 {/* Right section with download icon */}
-                <div className="flex-shrink-0 text-white group-hover:animate-bounce">
+                {/* <div className="flex-shrink-0 text-white group-hover:animate-bounce">
                   <AiOutlineDownload className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-                </div>
+                </div> */}
               </Link>
             </div>
             <div className="flex gap-4 items-center pt-4 pb-12 ">
@@ -124,25 +124,25 @@ const Banner = () => {
                 target="_blank"
                 to={"https://www.facebook.com/profile.php?id=61579243509619"}
               >
-                <FaFacebookSquare className="text-5xl" />
+                <FaFacebookSquare className="text-5xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.tiktok.com/@type4.pal?_t=ZS-8ysTCwghFcP&_r=1"}
               >
-                <AiFillTikTok className="text-5xl" />
+                <AiFillTikTok className="text-5xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://www.instagram.com/type4pal/"}>
-                <FaInstagramSquare className="text-5xl" />
+                <FaInstagramSquare className="text-5xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://pin.it/6VXi3toRC"}>
-                <FaPinterest className="text-5xl" />
+                <FaPinterest className="text-5xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.reddit.com/r/Type4Pal/s/A4KISnEKNn"}
               >
-                <FaReddit className="text-5xl" />
+                <FaReddit className="text-5xl hover:text-[#004f42]" />
               </Link>
             </div>
           </div>

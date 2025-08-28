@@ -33,7 +33,7 @@ const Footer = () => {
             <Link
               target="_blank"
               to={"https://play.google.com/"}
-              className="relative w-full bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-2 py-2 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 h-16 flex-1"
+              className="relative w-full bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-2 py-2 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105  h-16 flex-1"
             >
               {/* Left section with Google Play icon and text */}
               <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -76,16 +76,16 @@ const Footer = () => {
               </div>
 
               {/* Right section with download icon */}
-              <div className="flex-shrink-0 text-white group-hover:animate-bounce">
+              {/* <div className="flex-shrink-0 text-white group-hover:animate-bounce">
                 <AiOutlineDownload className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-              </div>
+              </div> */}
             </Link>
 
             {/* Apple App Store Button */}
             <Link
               target="_blank"
               to={"https://apps.apple.com/"}
-              className="relative w-[200px] bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-2 py-2 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 h-16 flex-1"
+              className="relative w-[200px] bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-2 py-2 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105   h-16 flex-1"
             >
               {/* Left section with Google Play icon and text */}
               <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -120,9 +120,9 @@ const Footer = () => {
               </div>
 
               {/* Right section with download icon */}
-              <div className="flex-shrink-0 text-white group-hover:animate-bounce">
+              {/* <div className="flex-shrink-0 text-white group-hover:animate-bounce">
                 <AiOutlineDownload className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-              </div>
+              </div> */}
             </Link>
           </div>
 
@@ -145,25 +145,25 @@ const Footer = () => {
                 target="_blank"
                 to={"https://www.facebook.com/profile.php?id=61579243509619"}
               >
-                <FaFacebookSquare className="text-3xl" />
+                <FaFacebookSquare className="text-3xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.tiktok.com/@type4.pal?_t=ZS-8ysTCwghFcP&_r=1"}
               >
-                <AiFillTikTok className="text-3xl" />
+                <AiFillTikTok className="text-3xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://www.instagram.com/type4pal/"}>
-                <FaInstagramSquare className="text-3xl" />
+                <FaInstagramSquare className="text-3xl hover:bg-[]" />
               </Link>
               <Link target="_blank" to={"https://pin.it/6VXi3toRC"}>
-                <FaPinterest className="text-3xl" />
+                <FaPinterest className="text-3xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.reddit.com/r/Type4Pal/s/A4KISnEKNn"}
               >
-                <FaReddit className="text-3xl" />
+                <FaReddit className="text-3xl hover:text-[#004f42]" />
               </Link>
             </div>
           </div>
@@ -172,33 +172,32 @@ const Footer = () => {
         {/* Bottom section: */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-6 mt-6">
           {/* Navigation Links */}
-          <nav className="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 mb-4 sm:mb-0">
+          <nav className="flex flex-wrap justify-center items-center sm:justify-start gap-4 sm:gap-6 sm:mb-0">
+            <div className="flex items-center mb-6 sm:mb-0">
+              <input
+                type="email"
+                placeholder="Email"
+                className="bg-white shadow-lg px-2 py-2 focus:outline-none text-black placeholder:text-gray-400 rounded-l-md"
+              />
+              <button className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-r-md px-4">
+                Send Newsletter
+              </button>
+            </div>
+
             <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Login
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Sign Up
-            </a>
-            <a
-              href="#"
+              href="#Pricing"
               className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
             >
               Pricing Plans
             </a>
             <a
-              href="#"
+              href="#HowItWorks"
               className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
             >
               Process
             </a>
             <a
-              href="#"
+              href="mailto:yourmail@gmail.com"
               className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
             >
               Contacts
@@ -212,8 +211,8 @@ const Footer = () => {
           </nav>
 
           {/* Copyright */}
-          <p className="text-gray-500 text-sm sm:text-base">
-            &copy; 2025 Type4 Pal
+          <p className="text-gray-500 text-sm sm:text-base mt-4 sm:mt-0">
+            &copy; 2025 Type4Pal
           </p>
         </div>
       </div>

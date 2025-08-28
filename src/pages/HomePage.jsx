@@ -4,6 +4,7 @@ import HowItWorks from "../components/HowItWorks";
 import QuizAnalysis from "../components/QuizAnalysis";
 import ProductSuggestions from "../components/Products";
 import FreequentlyAsked from "../components/FreequentlyAsked";
+import SubscriptionSection from "../components/SubscriptionSection";
 
 const HomePage = () => {
   return (
@@ -11,7 +12,7 @@ const HomePage = () => {
       <Banner />
       <HowItWorks />
       <QuizAnalysis />
-      {/* <ProductSuggestions/> */}
+      <SubscriptionSection />
       <FreequentlyAsked />
     </div>
   );

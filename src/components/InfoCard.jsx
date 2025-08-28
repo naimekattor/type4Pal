@@ -124,7 +124,7 @@ export default function InfoCard() {
                 <img
                   src={currentSlideData.image}
                   alt={currentSlideData.title}
-                  className="w-full h-[400px]  object-cover transition-all duration-500"
+                  className="w-[336px] h-[400px]  object-cover transition-all duration-500"
                   onError={(e) => {
                     e.target.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="480" viewBox="0 0 400 480"><rect width="400" height="480" fill="%23f3f4f6"/><circle cx="200" cy="180" r="60" fill="%236b7280" opacity="0.3"/><path d="M140 300 Q200 340 260 300" stroke="%236b7280" stroke-width="4" fill="none" opacity="0.3"/><text x="50%" y="85%" text-anchor="middle" dy="0.3em" font-family="Arial, sans-serif" font-size="18" fill="%236b7280" opacity="0.5">Hair Care Image</text></svg>`;
                   }}
