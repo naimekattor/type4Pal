@@ -22,7 +22,7 @@ const QuizAnalysis = () => {
         </p> */}
       </div>
 
-      <div className="max-w-3xl mx-auto ">
+      <div className="max-w-2xl mx-auto ">
         {/* Video player placeholder */}
 
         {/* <video

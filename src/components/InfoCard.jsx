@@ -15,13 +15,13 @@ const slides = [
     image: hairImg2,
     title: "Al-Powered Product Matches",
     description:
-      "Say goodbye to trial and error. Get personalized product recommendations that actually work foryour unique hair profile.",
+      "Say goodbye to trial and error. Get personalized product recommendations that actually work for your unique hair profile.",
   },
   {
     image: hairImg3,
     title: "Smart Routine Builder",
     description:
-      "Turn wash days into a stress-free ritual. Create daily, weekly, and monthly plans with reminders to",
+      "Turn wash days into a stress-free ritual. Create daily, weekly, and monthly plans with reminders to to keep you consistent.",
   },
   {
     image: hairImg4,
@@ -35,12 +35,6 @@ const slides = [
     description:
       "Small changes, big results. Receive bite-sized tips tailored to your routine so your hair stays healthy between washes.",
   },
-  // {
-  //   image: hairImg6,
-  //   title: "Discover safe ingredients",
-  //   description:
-  //     "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
-  // },
 ];
 
 // Custom Arrow Components
