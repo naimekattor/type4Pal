@@ -75,7 +75,7 @@ const Navbar = () => {
               }`}
             >
               <a href="#Quiz" onClick={() => setActive("Quiz")}>
-                Quiz
+                Feature
               </a>
             </li>
             <li
@@ -153,7 +153,7 @@ const Navbar = () => {
               </li>
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
                 <a href="#Quiz" onClick={() => setShowMenu(false)}>
-                  Quiz
+                  Feature
                 </a>
               </li>
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">

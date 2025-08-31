@@ -19,7 +19,7 @@ const Banner = () => {
             <h1 className="xl:text-[62px] md:text-[52px] text-[32px] font-bold md:w-3/4 w-full md:px-0 px-4 md:text-start text-center mb-4">
               Stop Guessing. Start Loving Your Hair
             </h1>
-            <p className="md:text-[20px] text-[16px] font-medium text-black/60 w-70/100">
+            <p className="md:text-[20px] text-[16px] font-medium text-black/60 w-70/100 md:text-start text-center">
               Type4Pal helps you finally understand your hair and gives you the
               exact products and routines it needs, so every day is a good hair
               day.

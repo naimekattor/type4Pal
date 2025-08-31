@@ -54,7 +54,7 @@ const FreequentlyAsked = () => {
           <div className="relative w-28 h-28 sm:w-64 sm:h-64 lg:w-40 lg:h-40 bg-[#F3FAF9] rounded-full flex flex-col items-center justify-center text-center shadow-inner">
             <a
               href="mailto:example@gmail.com"
-              className="text-xl sm:text-6xl lg:text-2xl font-bold text-[#00000] opacity-75"
+              className="text-[16px] sm:text-6xl lg:text-2xl font-bold text-[#00000] opacity-75 hover:underline"
             >
               Contact Us
             </a>

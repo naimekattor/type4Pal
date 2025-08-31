@@ -179,7 +179,7 @@ const Footer = () => {
                 placeholder="Email"
                 className="bg-white shadow-lg px-2 py-2 focus:outline-none text-black placeholder:text-gray-400 rounded-l-md"
               />
-              <button className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-r-md px-4">
+              <button className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-r-md px-4  whitespace-nowrap">
                 Send Newsletter
               </button>
             </div>

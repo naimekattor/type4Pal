@@ -4,7 +4,6 @@ import hairImg2 from "../assets/img/hair2.jpeg";
 import hairImg3 from "../assets/img/hair3.jpeg";
 import hairImg4 from "../assets/img/hair4.jpeg";
 import hairImg5 from "../assets/img/hair5.png";
-import hairImg6 from "../assets/img/hair6.jpeg";
 const slides = [
   {
     image: hairImg1,
@@ -118,20 +117,20 @@ export default function InfoCard() {
       <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center ">
           {/* Left: Image */}
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center ">
             <div className="relative">
               <div className="">
                 <img
                   src={currentSlideData.image}
                   alt={currentSlideData.title}
-                  className="w-[336px] h-[400px]  object-cover transition-all duration-500"
+                  className="w-full h-[400px]  object-cover transition-all duration-500"
                 />
               </div>
             </div>
           </div>
 
           {/* Right: Text Content */}
-          <div className="text-center lg:text-left px-4">
+          <div className=" place-items-start px-2">
             <div className="space-y-6 max-w-lg">
               <h2 className="text-2xl md:text-2xl font-bold text-gray-700 leading-tight">
                 {currentSlideData.title}
@@ -148,7 +147,7 @@ export default function InfoCard() {
           aria-label="previous slide"
           onClick={prevSlide}
           disabled={isAnimating}
-          className="absolute -left-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed"
+          className="absolute -left-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed hidden md:block"
         >
           <div className="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all duration-300">
             <ChevronLeft className="w-5 h-5 text-gray-600" />
@@ -159,7 +158,7 @@ export default function InfoCard() {
           aria-label="next slide"
           onClick={nextSlide}
           disabled={isAnimating}
-          className="absolute -right-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed"
+          className="absolute -right-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed hidden md:block"
         >
           <div className="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all duration-300">
             <ChevronRight className="w-5 h-5 text-gray-600" />
