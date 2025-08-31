@@ -8,40 +8,40 @@ import hairImg6 from "../assets/img/hair6.jpeg";
 const slides = [
   {
     image: hairImg1,
-    title: "Read advice from our experts",
+    title: "Hair Profile Quiz",
     description:
-      "Receive actual information and useful advice every week. Which products is better for my hair? Is it safe ingredients? Myth or truth? We answer all these questions and many more every week.",
+      "Find out your porosity, density, and scalp needs in minutes to build a foundation for healthier hair .",
   },
   {
     image: hairImg2,
-    title: "Know your PEH balance",
+    title: "Al-Powered Product Matches",
     description:
-      "Understand your PEH balance to get the best routine for your hair type. Personalized tips and product recommendations included.",
+      "Say goodbye to trial and error. Get personalized product recommendations that actually work foryour unique hair profile.",
   },
   {
     image: hairImg3,
-    title: "Discover safe ingredients",
+    title: "Smart Routine Builder",
     description:
-      "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
+      "Turn wash days into a stress-free ritual. Create daily, weekly, and monthly plans with reminders to",
   },
   {
     image: hairImg4,
-    title: "Discover safe ingredients",
+    title: "Hair Health Dashboard",
     description:
-      "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
+      "Watch your progress in real time. Track your hair health and growth with clear visuals and side-by-side photos.",
   },
   {
     image: hairImg5,
-    title: "Discover safe ingredients",
+    title: "Daily Haircare Tips",
     description:
-      "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
+      "Small changes, big results. Receive bite-sized tips tailored to your routine so your hair stays healthy between washes.",
   },
-  {
-    image: hairImg6,
-    title: "Discover safe ingredients",
-    description:
-      "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
-  },
+  // {
+  //   image: hairImg6,
+  //   title: "Discover safe ingredients",
+  //   description:
+  //     "We help you understand which ingredients are safe, effective, and suitable for your unique hair needs.",
+  // },
 ];
 
 // Custom Arrow Components
@@ -88,7 +88,7 @@ export default function InfoCard() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentSlide]);
+  }, []);
 
   const nextSlide = () => {
     if (isAnimating) return;
@@ -116,7 +116,7 @@ export default function InfoCard() {
   return (
     <div className="relative w-full  mx-auto bg-white rounded-3xl overflow-hidden px-10 py-4">
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center min-h-[500px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center ">
           {/* Left: Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
@@ -125,9 +125,6 @@ export default function InfoCard() {
                   src={currentSlideData.image}
                   alt={currentSlideData.title}
                   className="w-[336px] h-[400px]  object-cover transition-all duration-500"
-                  onError={(e) => {
-                    e.target.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="480" viewBox="0 0 400 480"><rect width="400" height="480" fill="%23f3f4f6"/><circle cx="200" cy="180" r="60" fill="%236b7280" opacity="0.3"/><path d="M140 300 Q200 340 260 300" stroke="%236b7280" stroke-width="4" fill="none" opacity="0.3"/><text x="50%" y="85%" text-anchor="middle" dy="0.3em" font-family="Arial, sans-serif" font-size="18" fill="%236b7280" opacity="0.5">Hair Care Image</text></svg>`;
-                  }}
                 />
               </div>
             </div>
@@ -148,6 +145,7 @@ export default function InfoCard() {
 
         {/* Navigation Buttons */}
         <button
+          aria-label="previous slide"
           onClick={prevSlide}
           disabled={isAnimating}
           className="absolute -left-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed"
@@ -158,6 +156,7 @@ export default function InfoCard() {
         </button>
 
         <button
+          aria-label="next slide"
           onClick={nextSlide}
           disabled={isAnimating}
           className="absolute -right-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed"

@@ -15,7 +15,7 @@ const QuizAnalysis = () => {
       />
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-green-900">
-          Quiz Analysis
+          App Features
         </h2>
         {/* <p className="mt-2 text-gray-600">
           Lorem Ipsum is simply dummy text of the

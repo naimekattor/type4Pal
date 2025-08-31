@@ -1,5 +1,6 @@
 import { GrCheckbox } from "react-icons/gr";
 import { IoMdCheckboxOutline } from "react-icons/io";
+import { Link } from "react-router";
 
 const plans = [
   {
@@ -75,16 +76,18 @@ export default function SubscriptionSection() {
                   </span>
                   <span className="text-[#1e2939] ml-1">{plan.period}</span>
                 </div>
-                <button
+                <Link
+                  to={"https://play.google.com/store"}
+                  target="_blank"
                   className={` 
-                    plan.popular bg-[#FF6F61] px-8 py-4 hover:bg-[#fa5749] text-white border  cursor-pointer font-semibold rounded-lg
+                    plan.popular bg-[#FF6F61] px-8 py-4 hover:bg-[#fa5749] text-white border  cursor-pointer font-semibold rounded-lg 
                   `}
                 >
                   {plan.buttonText}
-                </button>
+                </Link>
               </h2>
 
-              <div className="pt-0">
+              <div className="pt-0 mt-4">
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
