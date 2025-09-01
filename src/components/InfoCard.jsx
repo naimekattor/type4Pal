@@ -4,6 +4,7 @@ import hairImg2 from "../assets/img/hair2.jpeg";
 import hairImg3 from "../assets/img/hair3.jpeg";
 import hairImg4 from "../assets/img/hair4.jpeg";
 import hairImg5 from "../assets/img/hair5.png";
+import hairImg6 from "../assets/img/hair6.jpeg";
 const slides = [
   {
     image: hairImg1,
@@ -12,19 +13,19 @@ const slides = [
       "Find out your porosity, density, and scalp needs in minutes to build a foundation for healthier hair .",
   },
   {
-    image: hairImg2,
+    image: hairImg3,
     title: "Al-Powered Product Matches",
     description:
       "Say goodbye to trial and error. Get personalized product recommendations that actually work for your unique hair profile.",
   },
   {
-    image: hairImg3,
+    image: hairImg2,
     title: "Smart Routine Builder",
     description:
       "Turn wash days into a stress-free ritual. Create daily, weekly, and monthly plans with reminders to to keep you consistent.",
   },
   {
-    image: hairImg4,
+    image: hairImg6,
     title: "Hair Health Dashboard",
     description:
       "Watch your progress in real time. Track your hair health and growth with clear visuals and side-by-side photos.",
@@ -113,18 +114,18 @@ export default function InfoCard() {
           {/* Left: Image */}
           <div className="flex justify-center ">
             <div className="relative">
-              <div className="">
+              <div className="relative w-full ">
                 <img
                   src={currentSlideData.image}
                   alt={currentSlideData.title}
-                  className="w-full h-[400px]  object-cover transition-all duration-500"
+                  className="w-full max-h-[500px] object-contain rounded-lg shadow"
                 />
               </div>
             </div>
           </div>
 
           {/* Right: Text Content */}
-          <div className=" place-items-start px-2">
+          <div className=" md:place-items-start place-items-center px-2">
             <div className="space-y-6 max-w-lg">
               <h2 className="text-2xl md:text-2xl font-bold text-gray-700 leading-tight">
                 {currentSlideData.title}
