@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-// ArrowRight icon 
+// ArrowRight icon
 const ArrowRight = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const ArrowRight = ({ className }) => (
 );
 
 const AccordionItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   // Function to toggle the open/closed state
   const toggleAccordion = () => {
@@ -30,27 +30,31 @@ const AccordionItem = ({ question, answer }) => {
   return (
     <div className="border-b border-gray-200 py-4">
       <button
-        className="flex justify-between items-center w-full text-left focus:outline-none"
+        className="flex justify-between items-center w-full text-left focus:outline-none cursor-pointer transition-all duration-300"
         onClick={toggleAccordion}
-        aria-expanded={isOpen} 
+        aria-expanded={isOpen}
       >
         {/* Question text */}
-        <span className="text-lg font-medium text-gray-800">{question}</span>
+        <span className="text-lg font-medium text-gray-800 cursor-pointer wrap-normal">
+          {question}
+        </span>
         {/* Arrow icon that rotates based on isOpen state */}
         <ArrowRight
           className={`text-gray-500 transition-transform duration-300 ${
-            isOpen ? 'rotate-90' : ''
+            isOpen ? "rotate-90" : ""
           }`}
         />
       </button>
       {/* Answer content, conditionally rendered based on isOpen state */}
-      {isOpen && (
-        <div className="mt-3 pr-8 text-gray-600">
-          <p>{answer}</p>
-        </div>
-      )}
+      <div
+        className={`overflow-hidden transition-all duration-300 ${
+          isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="mt-3 pr-8 text-gray-600">{answer}</p>
+      </div>
     </div>
   );
 };
 
-export default AccordionItem
+export default AccordionItem;

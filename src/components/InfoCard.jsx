@@ -125,7 +125,7 @@ export default function InfoCard() {
           </div>
 
           {/* Right: Text Content */}
-          <div className=" md:place-items-start place-items-center px-2">
+          <div className=" flex md:items-start items-center justify-center md:justify-start px-2">
             <div className="space-y-6 max-w-lg">
               <h2 className="text-2xl md:text-2xl font-bold text-gray-700 leading-tight">
                 {currentSlideData.title}

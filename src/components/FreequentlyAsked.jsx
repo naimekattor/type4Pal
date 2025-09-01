@@ -4,19 +4,54 @@ import ellipse from "../assets/img/Ellipse.png";
 const FreequentlyAsked = () => {
   const faqData = [
     {
+      question: "What is Type4Pal?",
+      answer:
+        "Type4Pal is a personalized hair care app designed especially for natural, coily, and kinky hair types. It uses AI to recommend products, build routines, and track your hair health.",
+    },
+    {
       question: "What hair types does Type4Pal support?",
       answer:
-        "Type4 Pal is designed with a special focus on tightly curled, kinky, and afro-textured hair, but anyone regardless of hair type can benefit from its personalized care, routines, and product recommendations.",
+        "The app was created with tightly coiled and afro-textured hair in mind, but anyone with curly, coily, or wavy hair can benefit from its personalized features and product recommendations.",
     },
     {
-      question: "How does the AI work?",
+      question: "How does the app work?",
       answer:
-        "Our AI analyzes detailed hair profiles against scientifically vetted product ingredients, user feedback, and environmental data to provide personalized care recommendations.",
+        "Start with a quick hair profile quiz, then get AI-powered analysis, customized routines, and daily care tips. Track your progress with the Hair Health Dashboard and stay consistent with smart reminders.",
     },
     {
-      question: "Is Type4Pal free to use?",
+      question: "What makes Type4Pal different from other hair apps?",
       answer:
-        "The app offers a freemium version with core features free of charge. Premium subscriptions offer comprehensive features including routine reminders, advanced analytics, and more.",
+        "Type4Pal goes beyond generic advice. It’s tailored for natural hair, powered by AI, and designed to help you stay consistent with your routine, while also connecting you to a supportive community.",
+    },
+    {
+      question: "What features are free?",
+      answer:
+        "The free plan includes the hair profile quiz, limited product recommendations, daily tips, and basic hair profile analysis.",
+    },
+    {
+      question: "What do I get with Premium?",
+      answer:
+        "Premium unlocks the full experience: unlimited recommendations, the Hair Health Dashboard, smart routine builder with reminders and advanced hair profile analysis.",
+    },
+    {
+      question: "How much does Premium cost?",
+      answer:
+        "Premium is $5.99 per month or $59 per year (with two months free).",
+    },
+    {
+      question: "Will my data be safe?",
+      answer:
+        "Yes. Your privacy is important to us. We securely store your information and never sell your data.",
+    },
+    {
+      question: "Can I use Type4Pal if I live outside the U.S.?",
+      answer:
+        "Absolutely. Type4Pal is available globally, with product recommendations and tips tailored to your location and climate.",
+    },
+    {
+      question: "How do I get started?",
+      answer:
+        "Download the app, take the hair quiz, and start exploring your personalized recommendations and routines.",
     },
   ];
 
@@ -27,7 +62,7 @@ const FreequentlyAsked = () => {
     >
       <img
         src={ellipse}
-        className="absolute -top-[200px] -left-[800px] z-50 w-full h-[600px]"
+        className="absolute -top-[200px] -left-[800px] w-full h-[600px] -z-10"
       />
       {/* Main Heading */}
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#004D40] mb-2 text-center ">

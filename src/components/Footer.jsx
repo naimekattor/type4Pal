@@ -154,7 +154,7 @@ const Footer = () => {
                 <AiFillTikTok className="text-3xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://www.instagram.com/type4pal/"}>
-                <FaInstagramSquare className="text-3xl hover:bg-[]" />
+                <FaInstagramSquare className="text-3xl hover:bg-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://pin.it/6VXi3toRC"}>
                 <FaPinterest className="text-3xl hover:text-[#004f42]" />
