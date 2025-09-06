@@ -174,14 +174,17 @@ const Footer = () => {
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center items-center sm:justify-start gap-4 sm:gap-6 sm:mb-0">
             <div className="flex items-center mb-6 sm:mb-0">
-              <input
+              {/* <input
                 type="email"
                 placeholder="Email"
                 className="bg-white shadow-lg px-2 py-2 focus:outline-none text-black placeholder:text-gray-400 rounded-l-md"
-              />
-              <button className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-r-md px-4  whitespace-nowrap">
+              /> */}
+              <Link
+                to={"https://type4pal.hashnode.dev/newsletter"}
+                className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-md px-4  whitespace-nowrap"
+              >
                 Send Newsletter
-              </button>
+              </Link>
             </div>
 
             <a
@@ -203,7 +206,8 @@ const Footer = () => {
               Contacts
             </a>
             <a
-              href="#"
+              href="https://type4pal.hashnode.dev/"
+              target="_blank"
               className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
             >
               Blog

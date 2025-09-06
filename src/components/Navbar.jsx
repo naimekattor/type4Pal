@@ -169,7 +169,10 @@ const Navbar = () => {
               </li>
 
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
-                <a href="#" onClick={() => setShowMenu(false)}>
+                <a
+                  href="https://type4pal.hashnode.dev/"
+                  onClick={() => setShowMenu(false)}
+                >
                   Blog
                 </a>
               </li>
