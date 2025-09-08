@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import hairImg1 from "../assets/img/hair1.jpeg";
-import hairImg2 from "../assets/img/hair2.jpeg";
+import hairImg1 from "../assets/img/hair1.jpg";
+import hairImg2 from "../assets/img/hair2.jpg";
 import hairImg3 from "../assets/img/hair3.jpeg";
 import hairImg4 from "../assets/img/hair4.jpeg";
-import hairImg5 from "../assets/img/hair5.png";
+import hairImg5 from "../assets/img/hair5.jpg";
 import hairImg6 from "../assets/img/hair6.jpeg";
 const slides = [
   {
@@ -25,7 +25,7 @@ const slides = [
       "Turn wash days into a stress-free ritual. Create daily, weekly, and monthly plans with reminders to to keep you consistent.",
   },
   {
-    image: hairImg6,
+    image: hairImg1,
     title: "Hair Health Dashboard",
     description:
       "Watch your progress in real time. Track your hair health and growth with clear visuals and side-by-side photos.",
