@@ -32,7 +32,7 @@ const slides = [
   },
   {
     image: hairImg5,
-    title: "Daily Haircare Tips",
+    title: "Weekly Haircare Tips",
     description:
       "Small changes, big results. Receive bite-sized tips tailored to your routine so your hair stays healthy between washes.",
   },
@@ -76,13 +76,13 @@ export default function InfoCard() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Auto-play functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const nextSlide = () => {
     if (isAnimating) return;

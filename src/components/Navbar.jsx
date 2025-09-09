@@ -108,7 +108,11 @@ const Navbar = () => {
                   : ""
               }`}
             >
-              <a href="#" onClick={() => setActive("Blog")}>
+              <a
+                href="https://type4pal.hashnode.dev/"
+                target="_blank"
+                onClick={() => setActive("Blog")}
+              >
                 Blog
               </a>
             </li>

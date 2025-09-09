@@ -34,6 +34,7 @@ const plans = [
   },
   {
     name: "Premium",
+    actualPrice: "$71.88",
     price: "$59",
     period: "/Year",
 
@@ -70,7 +71,10 @@ export default function SubscriptionSection() {
                 <h3 className="text-[#1e2939] text-xl font-bold mb-2">
                   {plan.name}
                 </h3>
-                <div className="flex items-baseline justify-center mb-4">
+                <span className="text-lg mb-2 line-through decoration-red-500 decoration-2">
+                  {plan.actualPrice}
+                </span>
+                <div className="flex items-baseline justify-center mb-6">
                   <span className="text-4xl font-bold text-[#1e2939]">
                     {plan.price}
                   </span>
@@ -80,7 +84,7 @@ export default function SubscriptionSection() {
                   to={"https://play.google.com/store"}
                   target="_blank"
                   className={` 
-                    plan.popular bg-[#FF6F61] px-8 py-4 hover:bg-[#fa5749] text-white border  cursor-pointer font-semibold rounded-lg 
+                    plan.popular bg-[#FF6F61] px-8 py-4 hover:bg-[#fa5749] text-white border cursor-pointer font-semibold rounded-lg 
                   `}
                 >
                   {plan.buttonText}

@@ -67,7 +67,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-start text-white">
                   <span className="text-[10px] font-normal  uppercase">
-                    Download on the
+                    Download on
                   </span>
                   <span className="text-[10px] md:text-[18px] font-normal ">
                     Google Play
@@ -111,7 +111,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-start text-white">
                   <span className="text-[10px]  font-normal  uppercase">
-                    Download on the
+                    Download on
                   </span>
                   <span className="text-[10px] md:text-[18px] font-normal ">
                     App Store

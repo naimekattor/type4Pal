@@ -8,19 +8,19 @@ const HowItWorks = () => {
       id: 1,
       title: "Personalized Hair Profile",
       description:
-        "Quickly identify your hair's unique characteristics, including curl pattern, porosity, density, thickness, and scalp condition. Type4 Pal's comprehensive quiz takes the guesswork out of hair care.",
+        "Quickly identify your hair's unique characteristics, including curl pattern, porosity, density, thickness, and scalp condition. Type4Pal's comprehensive quiz takes the guesswork out of hair care.",
     },
     {
       id: 2,
       title: " AI-Driven Recommendations",
       description:
-        "Powered by advanced AI, Type4 Pal recommends hair products uniquely suited to your hair’s specific needs and environmental factors. No more guessing, get effective products matched to your exact hair profile.",
+        "Powered by advanced AI, Type4Pal recommends hair products uniquely suited to your hair’s specific needs and environmental factors. No more guessing, get effective products matched to your exact hair profile.",
     },
     {
       id: 3,
       title: "Smart Routine Builder",
       description:
-        "Create, schedule, and stick to personalized hair care routines with ease. Type4 Pal helps you never skip a step, ensuring consistent hair health improvements through daily, weekly, and monthly reminders.",
+        "Create, schedule, and stick to personalized hair care routines with ease. Type4Pal helps you never skip a step, ensuring consistent hair health improvements through daily, weekly, and monthly reminders.",
     },
     {
       id: 4,
