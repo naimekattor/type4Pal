@@ -71,10 +71,11 @@ export default function SubscriptionSection() {
                 <h3 className="text-[#1e2939] text-xl font-bold mb-2">
                   {plan.name}
                 </h3>
-                <span className="text-lg mb-2 line-through decoration-red-500 decoration-2">
-                  {plan.actualPrice}
-                </span>
+
                 <div className="flex items-baseline justify-center mb-6">
+                  <span className="text-lg  line-through decoration-red-500 decoration-2">
+                    {plan.actualPrice}
+                  </span>
                   <span className="text-4xl font-bold text-[#1e2939]">
                     {plan.price}
                   </span>
