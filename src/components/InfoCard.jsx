@@ -4,10 +4,10 @@ import hairImg2 from "../assets/img/hair2.jpg";
 import hairImg3 from "../assets/img/hair3.jpeg";
 import hairImg4 from "../assets/img/hair4.jpeg";
 import hairImg5 from "../assets/img/hair5.jpg";
-import hairImg6 from "../assets/img/hair6.jpeg";
+import hairImg7 from "../assets/img/hair7.png";
 const slides = [
   {
-    image: hairImg1,
+    image: hairImg7,
     title: "Hair Profile Quiz",
     description:
       "Find out your porosity, density, and scalp needs in minutes to build a foundation for healthier hair .",
