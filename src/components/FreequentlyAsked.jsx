@@ -58,7 +58,7 @@ const FreequentlyAsked = () => {
   return (
     <div
       id="FAQ"
-      className="py-20 bg-gradient-to-b from-[#fffaf6] to-[#ffffff]   font-sans relative "
+      className="px-4 py-20 bg-gradient-to-b from-[#fffaf6] to-[#ffffff]   font-sans relative "
     >
       <img
         src={ellipse}
@@ -71,7 +71,7 @@ const FreequentlyAsked = () => {
 
       <div className="max-w-7xl w-full   overflow-hidden md:flex mx-auto">
         {/* Left Section: Frequently Asked Questions and Accordion */}
-        <div className="md:w-2/3 p-6 sm:p-8 lg:p-10">
+        <div className="md:w-2/3 ">
           {/* Accordion Items */}
           <div className="space-y-0">
             {faqData.map((item, index) => (

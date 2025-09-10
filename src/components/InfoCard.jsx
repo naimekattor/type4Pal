@@ -76,13 +76,13 @@ export default function InfoCard() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Auto-play functionality
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextSlide();
-  //   }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const nextSlide = () => {
     if (isAnimating) return;
@@ -142,7 +142,7 @@ export default function InfoCard() {
           aria-label="previous slide"
           onClick={prevSlide}
           disabled={isAnimating}
-          className="absolute -left-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed hidden md:block"
+          className="absolute -left-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed "
         >
           <div className="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all duration-300">
             <ChevronLeft className="w-5 h-5 text-gray-600" />
@@ -153,7 +153,7 @@ export default function InfoCard() {
           aria-label="next slide"
           onClick={nextSlide}
           disabled={isAnimating}
-          className="absolute -right-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed hidden md:block"
+          className="absolute -right-9 top-1/2 transform -translate-y-1/2 z-20 group disabled:opacity-50 disabled:cursor-not-allowed "
         >
           <div className="flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-full shadow-md hover:shadow-lg hover:bg-gray-50 transition-all duration-300">
             <ChevronRight className="w-5 h-5 text-gray-600" />

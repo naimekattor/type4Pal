@@ -172,47 +172,49 @@ const Footer = () => {
         {/* Bottom section: */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-6 mt-6">
           {/* Navigation Links */}
-          <nav className="flex flex-wrap justify-center items-center sm:justify-start gap-4 sm:gap-6 sm:mb-0">
-            <div className="flex items-center mb-6 sm:mb-0">
-              {/* <input
-                type="email"
-                placeholder="Email"
-                className="bg-white shadow-lg px-2 py-2 focus:outline-none text-black placeholder:text-gray-400 rounded-l-md"
-              /> */}
-              <Link
-                to={"https://type4pal.hashnode.dev/newsletter"}
-                className="bg-[#004f42]  py-2 text-white hover:bg-[#05332b] rounded-md px-4  whitespace-nowrap"
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            {/* Newsletter Button */}
+            <div className="flex justify-center sm:justify-start">
+              <a
+                href="https://type4pal.hashnode.dev/newsletter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#004f42] hover:bg-[#05332b] text-white px-5 py-2 rounded-lg shadow-md transition-all duration-200 whitespace-nowrap"
               >
                 Send Newsletter
-              </Link>
+              </a>
             </div>
 
-            <a
-              href="#Pricing"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Pricing Plans
-            </a>
-            <a
-              href="#HowItWorks"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Process
-            </a>
-            <a
-              href="mailto:yourmail@gmail.com"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Contacts
-            </a>
-            <a
-              href="https://type4pal.hashnode.dev/"
-              target="_blank"
-              className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
-            >
-              Blog
-            </a>
-          </nav>
+            {/* Footer Nav Links */}
+            <nav className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6 text-sm sm:text-base">
+              <a
+                href="#Pricing"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Pricing Plans
+              </a>
+              <a
+                href="#HowItWorks"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Process
+              </a>
+              <a
+                href="mailto:yourmail@gmail.com"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Contacts
+              </a>
+              <a
+                href="https://type4pal.hashnode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Blog
+              </a>
+            </nav>
+          </div>
 
           {/* Copyright */}
           <p className="text-gray-500 text-sm sm:text-base mt-4 sm:mt-0">
