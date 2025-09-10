@@ -27,7 +27,7 @@ const Navbar = () => {
       id="header"
       className=" bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7] "
     >
-      <div className=" 2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto mx-4 py-4">
+      <div className=" container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div>
             <Link to={"/"}>

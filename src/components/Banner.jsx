@@ -13,13 +13,13 @@ import {
 const Banner = () => {
   return (
     <div className="bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7]">
-      <div className="2xl:max-w-[1536px] xl:max-w-7xl lg:max-w-[992px] md:max-w-[768px] md:mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex lg:flex-row flex-col-reverse items-center">
-          <div className="place-items-center md:place-items-start">
+          <div className="grid place-items-center md:place-items-start">
             <h1 className="xl:text-[62px] md:text-[52px] text-[32px] font-bold md:w-3/4 w-full md:px-0 px-4 md:text-start text-center mb-4">
               Stop Guessing. Start Loving Your Hair
             </h1>
-            <p className="md:text-[20px] text-[16px] font-medium text-black/60 w-70/100 md:text-start text-center">
+            <p className="md:text-[20px] text-[16px] font-medium text-black/60 w-[70%] md:text-start text-center">
               Type4Pal helps you finally understand your hair and gives you the
               exact products and routines it needs, so every day is a good hair
               day.
@@ -124,25 +124,25 @@ const Banner = () => {
                 target="_blank"
                 to={"https://www.facebook.com/profile.php?id=61579243509619"}
               >
-                <FaFacebookSquare className="text-5xl hover:text-[#004f42]" />
+                <FaFacebookSquare className="text-3xl sm:text-4xl lg:text-5xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.tiktok.com/@type4.pal?_t=ZS-8ysTCwghFcP&_r=1"}
               >
-                <AiFillTikTok className="text-5xl hover:text-[#004f42]" />
+                <AiFillTikTok className="text-3xl sm:text-4xl lg:text-5xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://www.instagram.com/type4pal/"}>
-                <FaInstagramSquare className="text-5xl hover:text-[#004f42]" />
+                <FaInstagramSquare className="text-3xl sm:text-4xl lg:text-5xl hover:text-[#004f42]" />
               </Link>
               <Link target="_blank" to={"https://pin.it/6VXi3toRC"}>
-                <FaPinterest className="text-5xl hover:text-[#004f42]" />
+                <FaPinterest className="text-3xl sm:text-4xl lg:text-5xl hover:text-[#004f42]" />
               </Link>
               <Link
                 target="_blank"
                 to={"https://www.reddit.com/r/Type4Pal/s/A4KISnEKNn"}
               >
-                <FaReddit className="text-5xl hover:text-[#004f42]" />
+                <FaReddit className="text-3xl sm:text-4xl lg:text-5xl hover:text-[#004f42]" />
               </Link>
             </div>
           </div>
