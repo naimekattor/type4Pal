@@ -1,4 +1,4 @@
-import logo from "../assets/img/type4pallogo1.png";
+import logo from "../assets/img/Type4PalLogo1.png";
 import { Link } from "react-router";
 import {
   FaFacebookSquare,
