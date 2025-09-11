@@ -1,9 +1,5 @@
-import React from "react";
-import logo from "../assets/img/type4pallogo.png";
-import { FaFacebook, FaFacebookF, FaTwitter } from "react-icons/fa6";
+import logo from "../assets/img/type4pallogo1.png";
 import { Link } from "react-router";
-import Storebutton from "../assets/img/Storebutton.png";
-import Applebutton from "../assets/img/Applebutton.png";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -23,7 +19,7 @@ const Footer = () => {
               src={logo}
               alt="type4 pal logo"
               loading="lazy"
-              className="md:w-[139px] w-[100px] md:h-[96px] h-[76px]"
+              className="max-h-[60px] md:max-h-[80px] w-auto"
             />
           </div>
 
@@ -200,10 +196,10 @@ const Footer = () => {
                 Process
               </a>
               <a
-                href="mailto:yourmail@gmail.com"
+                href="mailto:support@type4pal.com"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
-                Contacts
+                Contact Us
               </a>
               <a
                 href="https://type4pal.hashnode.dev/"

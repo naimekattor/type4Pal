@@ -71,7 +71,7 @@ const FreequentlyAsked = () => {
 
       <div className="max-w-7xl w-full   overflow-hidden md:flex mx-auto">
         {/* Left Section: Frequently Asked Questions and Accordion */}
-        <div className="md:w-2/3 ">
+        <div className=" ">
           {/* Accordion Items */}
           <div className="space-y-0">
             {faqData.map((item, index) => (
@@ -85,7 +85,7 @@ const FreequentlyAsked = () => {
         </div>
 
         {/* Right Section:  */}
-        <div className="md:w-1/3  flex items-center justify-center p-6 sm:p-8 lg:p-10">
+        {/* <div className="md:w-1/3  flex items-center justify-center p-6 sm:p-8 lg:p-10">
           <div className="relative w-28 h-28 sm:w-64 sm:h-64 lg:w-40 lg:h-40 bg-[#F3FAF9] rounded-full flex flex-col items-center justify-center text-center shadow-inner">
             <a
               href="mailto:example@gmail.com"
@@ -93,12 +93,8 @@ const FreequentlyAsked = () => {
             >
               Contact Us
             </a>
-            {/* <p className="mt-2 text-sm sm:text-base text-[#919BB7] text-[15px] leading-tight px-4">
-              Let us know if you have any other questions, our team is always
-              happy to help!
-            </p> */}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

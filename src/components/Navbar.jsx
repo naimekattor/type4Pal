@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/img/type4pallogo.png";
+import logo from "../assets/img/type4pallogo1.png";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-router";
@@ -34,7 +34,7 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="type4 pal logo"
-                className="md:w-[139px] w-[100px] md:h-[96px] h-[76px]"
+                className="max-h-[60px] md:max-h-[80px] w-auto"
               />
             </Link>
           </div>
