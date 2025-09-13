@@ -175,6 +175,7 @@ const Navbar = () => {
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
                 <a
                   href="https://type4pal.hashnode.dev/"
+                  target="_blank"
                   onClick={() => setShowMenu(false)}
                 >
                   Blog
