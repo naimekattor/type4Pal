@@ -161,7 +161,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="cursor-pointer bg-[#EAD9B7] rounded-2xl py-3 px-6  text-[14px] font-[500]">
-                <a href="#Quiz" onClick={() => setShowMenu(false)}>
+                <a href="#Pricing" onClick={() => setShowMenu(false)}>
                   Pricing
                 </a>
               </li>
