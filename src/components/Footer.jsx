@@ -128,7 +128,7 @@ const Footer = () => {
               to="/privacy-policy"
               className="text-gray-600 hover:text-gray-900 text-sm sm:text-base"
             >
-              Privacy Policy
+              Privacy policy .
             </Link>
             <Link
               to="/terms-condiditions"
@@ -177,7 +177,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-[#004f42] hover:bg-[#05332b] text-white px-5 py-2 rounded-lg shadow-md transition-all duration-200 whitespace-nowrap"
               >
-                Send Newsletter
+                Join Newsletter
               </a>
             </div>
 
