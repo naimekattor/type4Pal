@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import bannerImg from "../assets/img/banner.png";
-import Storebutton from "../assets/img/Storebutton.png";
-import Applebutton from "../assets/img/Applebutton.png";
 import { Link } from "react-router";
-import { AiFillTikTok, AiOutlineDownload } from "react-icons/ai";
+import { AiFillTikTok } from "react-icons/ai";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaPinterest,
   FaReddit,
 } from "react-icons/fa";
+import Modal from "./Modal";
 const Banner = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="bg-gradient-to-r from-[#FFFFFF] to-[#EAD9B7]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,9 +27,10 @@ const Banner = () => {
             </p>
             <div className="flex md:flex-row flex-col gap-4 items-center pt-6">
               <Link
-                target="_blank"
-                to={"https://play.google.com/"}
+                // target="_blank"
+                // to={"https://play.google.com/"}
                 className="relative w-full bg-[#32302E] cursor-pointer hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105  md:h-20 h-16 "
+                onClick={() => setShowModal(true)}
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -77,9 +79,10 @@ const Banner = () => {
               </Link>
               {/* Apple App Store Button */}
               <Link
-                target="_blank"
-                to={"https://play.google.com/"}
+                // target="_blank"
+                // to={"https://play.google.com/"}
                 className="relative w-full bg-[#32302E] hover:bg-[#004f42] cursor-pointer transition-colors duration-200 rounded-lg px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between group shadow-lg hover:shadow-xl transform hover:scale-105  md:h-20 h-16  "
+                onClick={() => setShowModal(true)}
               >
                 {/* Left section with Google Play icon and text */}
                 <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
@@ -119,6 +122,7 @@ const Banner = () => {
                 </div> */}
               </Link>
             </div>
+            {showModal && <Modal setShowModal={setShowModal} />}
             <div className="flex gap-4 items-center pt-4 pb-12 ">
               <Link
                 target="_blank"

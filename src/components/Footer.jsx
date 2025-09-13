@@ -6,8 +6,12 @@ import {
   FaPinterest,
   FaReddit,
 } from "react-icons/fa";
-import { AiFillTikTok, AiOutlineDownload } from "react-icons/ai";
+import { AiFillTikTok } from "react-icons/ai";
+import { useState } from "react";
+import Modal from "./Modal";
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <footer className="bg-gradient-to-r from-[#FAF8F5] to-[#FBF8F5] py-8 px-4  font-sans">
       <div className="max-w-7xl mx-auto">
@@ -27,8 +31,9 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full md:w-auto">
             {/* Google Play Button */}
             <Link
-              target="_blank"
-              to="https://play.google.com/"
+              onClick={() => setShowModal(true)}
+              // target="_blank"
+              // to="https://play.google.com/"
               className="w-full sm:w-auto bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-2 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:scale-105 h-16"
             >
               <svg
@@ -64,8 +69,9 @@ const Footer = () => {
 
             {/* Apple Store Button */}
             <Link
-              target="_blank"
-              to="https://apps.apple.com/"
+              onClick={() => setShowModal(true)}
+              // target="_blank"
+              // to="https://apps.apple.com/"
               className="w-full sm:w-auto bg-[#32302E] hover:bg-[#004f42] transition-colors duration-200 rounded-lg px-4 py-2 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:scale-105 h-16"
             >
               <svg
@@ -85,6 +91,7 @@ const Footer = () => {
               </div>
             </Link>
           </div>
+          {showModal && <Modal setShowModal={setShowModal} />}
 
           {/* Privacy, Terms & Socials */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full md:w-auto">

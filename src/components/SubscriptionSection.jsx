@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { GrCheckbox } from "react-icons/gr";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { Link } from "react-router";
+import Modal from "./Modal";
 
 const plans = [
   {
@@ -52,6 +54,8 @@ const plans = [
 ];
 
 export default function SubscriptionSection() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section id="Pricing" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -82,8 +86,9 @@ export default function SubscriptionSection() {
                   <span className="text-[#1e2939] ml-1">{plan.period}</span>
                 </div>
                 <Link
-                  to={"https://play.google.com/store"}
-                  target="_blank"
+                  // to={"https://play.google.com/store"}
+                  // target="_blank"
+                  onClick={() => setShowModal(true)}
                   className={` 
                     plan.popular bg-[#FF6F61] px-8 py-4 hover:bg-[#fa5749] text-white border cursor-pointer font-semibold rounded-lg 
                   `}
@@ -91,6 +96,7 @@ export default function SubscriptionSection() {
                   {plan.buttonText}
                 </Link>
               </h2>
+              {showModal && <Modal setShowModal={setShowModal} />}
 
               <div className="pt-0 mt-4">
                 <ul className="space-y-3 mb-8">
