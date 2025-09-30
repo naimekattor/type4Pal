@@ -65,11 +65,11 @@ const FreequentlyAsked = () => {
         className="absolute -top-[200px] -left-[800px] w-full h-[600px] -z-10"
       />
       {/* Main Heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#004D40] mb-2 text-center ">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#004D40]  text-center mb-8">
         Frequently Asked Questions
       </h1>
 
-      <div className="max-w-7xl w-full   overflow-hidden md:flex mx-auto">
+      <div className="max-w-7xl w-full   overflow-hidden  container mx-auto">
         {/* Left Section: Frequently Asked Questions and Accordion */}
         <div className=" ">
           {/* Accordion Items */}
